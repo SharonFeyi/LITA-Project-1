@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Variables for Consistent Styling */
+  :root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+    --font-family: 'Epilogue', sans-serif;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: var(--font-family);
+    background-color: var(--almost-white);
+    color: var(--medium-gray);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Container for Layout Control */
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  /* Header Styles */
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--medium-gray);
+    font-weight: 500;
+  }
+  
+  .auth-buttons button {
+    border: 1px solid var(--medium-gray);
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-weight: 500;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .auth-buttons .register {
+    background-color: var(--almost-black);
+    color: var(--almost-white);
+    border: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .text-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--almost-black);
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    margin-bottom: 20px;
+  }
+  
+  .cta {
+    background-color: var(--almost-black);
+    color: var(--almost-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .visual-content .hero-image {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  /* Clients Section */
+  .clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+  }
+  
+  .clients img {
+    max-height: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-content {
+      max-width: 100%;
+    }
+  
+    .clients {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+  

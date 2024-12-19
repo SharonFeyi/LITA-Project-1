@@ -1,0 +1,59 @@
+/* Base Styles */
+body {
+  font-family: 'Arial, sans-serif';
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  height: 30px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.auth-buttons button {
+  margin-left: 1rem;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-section .text-content {
+  max-width: 40%;
+}
+
+.hero-section img {
+  max-width: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-section img {
+    max-width: 100%;
+  }
+}
